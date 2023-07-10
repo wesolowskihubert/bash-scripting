@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script installs nginx on ubuntu server
+#install nginx on ubuntu server
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install -y nginx
 echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html

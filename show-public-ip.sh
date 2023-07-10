@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Retrieve public IP address
+#check public IP address and print it
 public_ip=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
-
-# Print public IP address
 echo "Public IP: $public_ip"
